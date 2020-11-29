@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C2F55E22572F919005CE548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F55E12572F919005CE548 /* AppDelegate.swift */; };
 		4C2F55E42572F919005CE548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F55E32572F919005CE548 /* SceneDelegate.swift */; };
-		4C2F55E62572F919005CE548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F55E52572F919005CE548 /* ViewController.swift */; };
 		4C2F55E92572F919005CE548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F55E72572F919005CE548 /* Main.storyboard */; };
 		4C2F55EB2572F91A005CE548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F55EA2572F91A005CE548 /* Assets.xcassets */; };
 		4C2F55EE2572F91A005CE548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F55EC2572F91A005CE548 /* LaunchScreen.storyboard */; };
 		4C2F55F92572F91A005CE548 /* Night_DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F55F82572F91A005CE548 /* Night_DriveTests.swift */; };
 		4C2F56042572F91A005CE548 /* Night_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F56032572F91A005CE548 /* Night_DriveUITests.swift */; };
+		72898A6C25745CDF000DCB25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A6B25745CDF000DCB25 /* LoginViewController.swift */; };
+		72898A7425745D0C000DCB25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A7325745D0C000DCB25 /* HomeViewController.swift */; };
+		72898A79257465B6000DCB25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A78257465B6000DCB25 /* SignUpViewController.swift */; };
 		93879B7374C4E29EF81DB3B2 /* Pods_Night_DriveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */; };
 		A2259EDB2447DC6DC6FBAB63 /* Pods_Night_Drive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */; };
 		A3C233BF80A75B0176A66305 /* Pods_Night_Drive_Night_DriveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */; };
@@ -43,7 +45,6 @@
 		4C2F55DE2572F919005CE548 /* Night Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2F55E12572F919005CE548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C2F55E32572F919005CE548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C2F55E52572F919005CE548 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C2F55E82572F919005CE548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C2F55EA2572F91A005CE548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C2F55ED2572F91A005CE548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,9 @@
 		5C49620A9BBC08A1E6E226D8 /* Pods-Night Drive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive.release.xcconfig"; path = "Target Support Files/Pods-Night Drive/Pods-Night Drive.release.xcconfig"; sourceTree = "<group>"; };
 		5EC25F4EF304065A13F1E13C /* Pods-Night Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive/Pods-Night Drive.debug.xcconfig"; sourceTree = "<group>"; };
 		7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_DriveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72898A6B25745CDF000DCB25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		72898A7325745D0C000DCB25 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		72898A78257465B6000DCB25 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Drive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8827B54887D234DC98952F43 /* Pods-Night Drive-Night DriveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		94164CC2317C9B3369BCBB3D /* Pods-Night Drive-Night DriveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.release.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,11 +132,13 @@
 			children = (
 				4C2F55E12572F919005CE548 /* AppDelegate.swift */,
 				4C2F55E32572F919005CE548 /* SceneDelegate.swift */,
-				4C2F55E52572F919005CE548 /* ViewController.swift */,
 				4C2F55E72572F919005CE548 /* Main.storyboard */,
 				4C2F55EA2572F91A005CE548 /* Assets.xcassets */,
 				4C2F55EC2572F91A005CE548 /* LaunchScreen.storyboard */,
 				4C2F55EF2572F91A005CE548 /* Info.plist */,
+				72898A6B25745CDF000DCB25 /* LoginViewController.swift */,
+				72898A7325745D0C000DCB25 /* HomeViewController.swift */,
+				72898A78257465B6000DCB25 /* SignUpViewController.swift */,
 			);
 			path = "Night Drive";
 			sourceTree = "<group>";
@@ -165,7 +171,6 @@
 				0245DD8B3E57E490F0BD8682 /* Pods-Night DriveTests.debug.xcconfig */,
 				2697EF7B1E2D66CE96EB06FC /* Pods-Night DriveTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2F55E62572F919005CE548 /* ViewController.swift in Sources */,
+				72898A6C25745CDF000DCB25 /* LoginViewController.swift in Sources */,
 				4C2F55E22572F919005CE548 /* AppDelegate.swift in Sources */,
 				4C2F55E42572F919005CE548 /* SceneDelegate.swift in Sources */,
+				72898A7425745D0C000DCB25 /* HomeViewController.swift in Sources */,
+				72898A79257465B6000DCB25 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
