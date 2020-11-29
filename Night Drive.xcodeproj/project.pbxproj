@@ -15,6 +15,9 @@
 		4C2F55EE2572F91A005CE548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F55EC2572F91A005CE548 /* LaunchScreen.storyboard */; };
 		4C2F55F92572F91A005CE548 /* Night_DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F55F82572F91A005CE548 /* Night_DriveTests.swift */; };
 		4C2F56042572F91A005CE548 /* Night_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F56032572F91A005CE548 /* Night_DriveUITests.swift */; };
+		93879B7374C4E29EF81DB3B2 /* Pods_Night_DriveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */; };
+		A2259EDB2447DC6DC6FBAB63 /* Pods_Night_Drive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */; };
+		A3C233BF80A75B0176A66305 /* Pods_Night_Drive_Night_DriveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0245DD8B3E57E490F0BD8682 /* Pods-Night DriveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night DriveTests.debug.xcconfig"; path = "Target Support Files/Pods-Night DriveTests/Pods-Night DriveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2697EF7B1E2D66CE96EB06FC /* Pods-Night DriveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night DriveTests.release.xcconfig"; path = "Target Support Files/Pods-Night DriveTests/Pods-Night DriveTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C2F55DE2572F919005CE548 /* Night Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2F55E12572F919005CE548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C2F55E32572F919005CE548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		4C2F55FF2572F91A005CE548 /* Night DriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night DriveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2F56032572F91A005CE548 /* Night_DriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_DriveUITests.swift; sourceTree = "<group>"; };
 		4C2F56052572F91A005CE548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C49620A9BBC08A1E6E226D8 /* Pods-Night Drive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive.release.xcconfig"; path = "Target Support Files/Pods-Night Drive/Pods-Night Drive.release.xcconfig"; sourceTree = "<group>"; };
+		5EC25F4EF304065A13F1E13C /* Pods-Night Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive/Pods-Night Drive.debug.xcconfig"; sourceTree = "<group>"; };
+		7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_DriveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Drive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8827B54887D234DC98952F43 /* Pods-Night Drive-Night DriveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94164CC2317C9B3369BCBB3D /* Pods-Night Drive-Night DriveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.release.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Drive_Night_DriveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2259EDB2447DC6DC6FBAB63 /* Pods_Night_Drive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93879B7374C4E29EF81DB3B2 /* Pods_Night_DriveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C233BF80A75B0176A66305 /* Pods_Night_Drive_Night_DriveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D92AFEFEBA1B524645B57DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */,
+				F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */,
+				7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C2F55D52572F919005CE548 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				4C2F55F72572F91A005CE548 /* Night DriveTests */,
 				4C2F56022572F91A005CE548 /* Night DriveUITests */,
 				4C2F55DF2572F919005CE548 /* Products */,
+				64E7BB738ED1D950F63BC257 /* Pods */,
+				1D92AFEFEBA1B524645B57DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,20 @@
 			path = "Night DriveUITests";
 			sourceTree = "<group>";
 		};
+		64E7BB738ED1D950F63BC257 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EC25F4EF304065A13F1E13C /* Pods-Night Drive.debug.xcconfig */,
+				5C49620A9BBC08A1E6E226D8 /* Pods-Night Drive.release.xcconfig */,
+				8827B54887D234DC98952F43 /* Pods-Night Drive-Night DriveUITests.debug.xcconfig */,
+				94164CC2317C9B3369BCBB3D /* Pods-Night Drive-Night DriveUITests.release.xcconfig */,
+				0245DD8B3E57E490F0BD8682 /* Pods-Night DriveTests.debug.xcconfig */,
+				2697EF7B1E2D66CE96EB06FC /* Pods-Night DriveTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C2F56082572F91A005CE548 /* Build configuration list for PBXNativeTarget "Night Drive" */;
 			buildPhases = (
+				60B8ADB85B997ADC94A96113 /* [CP] Check Pods Manifest.lock */,
 				4C2F55DA2572F919005CE548 /* Sources */,
 				4C2F55DB2572F919005CE548 /* Frameworks */,
 				4C2F55DC2572F919005CE548 /* Resources */,
+				0B09DF86D019A3D34F41FF99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C2F560B2572F91A005CE548 /* Build configuration list for PBXNativeTarget "Night DriveTests" */;
 			buildPhases = (
+				40881B701DE7109FD9D8BFC0 /* [CP] Check Pods Manifest.lock */,
 				4C2F55F02572F91A005CE548 /* Sources */,
 				4C2F55F12572F91A005CE548 /* Frameworks */,
 				4C2F55F22572F91A005CE548 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C2F560E2572F91A005CE548 /* Build configuration list for PBXNativeTarget "Night DriveUITests" */;
 			buildPhases = (
+				450711BC36A3524FDDE0E9CE /* [CP] Check Pods Manifest.lock */,
 				4C2F55FB2572F91A005CE548 /* Sources */,
 				4C2F55FC2572F91A005CE548 /* Frameworks */,
 				4C2F55FD2572F91A005CE548 /* Resources */,
+				1B515FD1181911C0518814D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B09DF86D019A3D34F41FF99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B515FD1181911C0518814D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40881B701DE7109FD9D8BFC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Night DriveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		450711BC36A3524FDDE0E9CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Night Drive-Night DriveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B8ADB85B997ADC94A96113 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Night Drive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C2F55DA2572F919005CE548 /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		4C2F56092572F91A005CE548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC25F4EF304065A13F1E13C /* Pods-Night Drive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +601,7 @@
 		};
 		4C2F560A2572F91A005CE548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C49620A9BBC08A1E6E226D8 /* Pods-Night Drive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +620,7 @@
 		};
 		4C2F560C2572F91A005CE548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0245DD8B3E57E490F0BD8682 /* Pods-Night DriveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		4C2F560D2572F91A005CE548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2697EF7B1E2D66CE96EB06FC /* Pods-Night DriveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +664,7 @@
 		};
 		4C2F560F2572F91A005CE548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8827B54887D234DC98952F43 /* Pods-Night Drive-Night DriveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +684,7 @@
 		};
 		4C2F56102572F91A005CE548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94164CC2317C9B3369BCBB3D /* Pods-Night Drive-Night DriveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
