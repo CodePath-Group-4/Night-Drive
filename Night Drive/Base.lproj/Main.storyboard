@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Night_Drive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="rkV-kf-TiP">
@@ -79,12 +79,13 @@
                     <connections>
                         <outlet property="passwordField" destination="KOH-JQ-n6A" id="xKr-tz-Iow"/>
                         <outlet property="usernameField" destination="KHf-OE-QxH" id="cL3-IN-ANi"/>
-                        <segue destination="FGU-Ic-Qyh" kind="presentation" id="1Yc-89-5iY"/>
+                        <segue destination="FGU-Ic-Qyh" kind="presentation" identifier="loginSegue" id="1Yc-89-5iY"/>
+                        <segue destination="Igh-aG-h01" kind="presentation" identifier="signUpSegue" id="6QZ-m1-VLP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-296" y="104"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="Zjd-mh-WZS">
@@ -102,12 +103,12 @@
             </objects>
             <point key="canvasLocation" x="1796" y="104"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="T0j-qe-f7Z">
             <objects>
-                <viewController id="Igh-aG-h01" sceneMemberID="viewController">
+                <viewController id="Igh-aG-h01" customClass="SignUpViewController" customModule="Night_Drive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MQe-cm-4fi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="a0n-Jq-pBA">
@@ -129,6 +130,9 @@
                                 <rect key="frame" x="228" y="190" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="SignIn:" destination="Igh-aG-h01" eventType="touchUpInside" id="ueM-fO-Vgl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login To Your Night Drive Account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIk-g3-vGc">
                                 <rect key="frame" x="20" y="0.0" width="381" height="298"/>
@@ -159,6 +163,9 @@
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                 </state>
+                                <connections>
+                                    <action selector="SignUp:" destination="Igh-aG-h01" eventType="touchUpInside" id="nEh-XG-Eht"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already Have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50f-IF-5qs">
                                 <rect key="frame" x="20" y="195" width="200" height="21"/>
@@ -188,6 +195,12 @@
                         <viewLayoutGuide key="safeArea" id="Ytb-mS-iTZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="FCq-e7-87Z" id="sXr-Mf-GQA"/>
+                        <outlet property="sPasswordField" destination="Cqu-ja-4NC" id="wL9-fT-5FZ"/>
+                        <outlet property="sUsernameField" destination="cWh-JQ-UMT" id="Lal-11-pbC"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signInCompleteSegue" id="9PD-bi-WgM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLc-WG-pF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aJg-6z-CoD" userLabel="Exit" sceneMemberID="exit"/>
