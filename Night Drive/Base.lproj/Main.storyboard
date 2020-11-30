@@ -272,8 +272,7 @@
                         <outlet property="sPasswordField" destination="Cqu-ja-4NC" id="wL9-fT-5FZ"/>
                         <outlet property="sUsernameField" destination="cWh-JQ-UMT" id="Lal-11-pbC"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="signInCompleteSegue" id="9PD-bi-WgM"/>
-                        <segue destination="FGU-Ic-Qyh" kind="presentation" id="6qE-SU-fEi"/>
-                        <segue destination="FGU-Ic-Qyh" kind="presentation" id="9Bk-ou-07t"/>
+                        <segue destination="FGU-Ic-Qyh" kind="presentation" identifier="SignInToNavSegue" id="6qE-SU-fEi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLc-WG-pF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,7 +300,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Yc-89-5iY"/>
+        <segue reference="6qE-SU-fEi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon feather-map-pin" width="30" height="36"/>
