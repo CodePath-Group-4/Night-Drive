@@ -26,8 +26,8 @@ Allows users to create their own night driving route with music of their choice.
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-- [ ] User can create an account
-- [ ] User can log in
+- [x] User can create an account
+- [x] User can log in
 - [ ] User logs in to access their location and preference settings
 - [ ] User picks what their favorite artist/genre/etc. (Think Spotify interface)
 - [ ] User picks their route and amount of time.
@@ -40,6 +40,9 @@ Allows users to create their own night driving route with music of their choice.
 * Page of most played songs
 * Page of most driven routes
 * Optional Shuffle Button (i.e. random encounter/random song)
+
+
+<img src= 'http://g.recordit.co/DN3Rz2OnKG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### 2. Screen Archetypes
 
