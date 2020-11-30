@@ -30,16 +30,17 @@ class SignUpViewController: UIViewController {
         
         user.signUpInBackground { (success, error) in
             if success{
-                self.performSegue(withIdentifier: "signUpCompleteSegue", sender: nil)
+                self.performSegue(withIdentifier: "signInCompleteSegue", sender: nil)
             }
             else{
                 print("Error: \(error?.localizedDescription)")
+                //psuh
             }
         }
     }
     
     @IBAction func SignIn(_ sender: Any) {
-        self.performSegue(withIdentifier: "signUpCompleteSegue", sender: nil)
+        self.performSegue(withIdentifier: "signInCompleteSegue", sender: nil)
     }
     /*
     // MARK: - Navigation
