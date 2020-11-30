@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password)
         { (user, error) in
             if user != nil{
+                print ("User has logged in!")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
             else{
@@ -36,6 +37,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
+       
         self.performSegue(withIdentifier: "signUpSegue", sender: nil)
     }
     
