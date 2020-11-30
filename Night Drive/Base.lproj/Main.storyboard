@@ -200,6 +200,8 @@
                         <outlet property="sPasswordField" destination="Cqu-ja-4NC" id="wL9-fT-5FZ"/>
                         <outlet property="sUsernameField" destination="cWh-JQ-UMT" id="Lal-11-pbC"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="signInCompleteSegue" id="9PD-bi-WgM"/>
+                        <segue destination="FGU-Ic-Qyh" kind="presentation" id="6qE-SU-fEi"/>
+                        <segue destination="FGU-Ic-Qyh" kind="presentation" id="9Bk-ou-07t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLc-WG-pF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,6 +228,9 @@
             <point key="canvasLocation" x="1009" y="104"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6qE-SU-fEi"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="city" width="849" height="329"/>
         <image name="loginbg" width="375" height="812"/>
