@@ -8,6 +8,12 @@ target 'Night Drive' do
   # Pods for Night Drive
 
   pod 'Parse'
+  
+  source 'https://github.com/CocoaPods/Specs.git'
+
+  pod 'GoogleMaps', '= 3.10.0-beta1'
+  pod 'GooglePlaces', '= 3.10.0-beta1'
+
 
   target 'Night DriveTests' do
     inherit! :search_paths

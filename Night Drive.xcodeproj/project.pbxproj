@@ -14,6 +14,8 @@
 		4C2F55EE2572F91A005CE548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F55EC2572F91A005CE548 /* LaunchScreen.storyboard */; };
 		4C2F55F92572F91A005CE548 /* Night_DriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F55F82572F91A005CE548 /* Night_DriveTests.swift */; };
 		4C2F56042572F91A005CE548 /* Night_DriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F56032572F91A005CE548 /* Night_DriveUITests.swift */; };
+		4C2F5691257C35EF005CE548 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2F5690257C35EF005CE548 /* Images.xcassets */; };
+		4C2F5698257C3607005CE548 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2F5697257C3607005CE548 /* MapViewController.swift */; };
 		72898A6C25745CDF000DCB25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A6B25745CDF000DCB25 /* LoginViewController.swift */; };
 		72898A7425745D0C000DCB25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A7325745D0C000DCB25 /* HomeViewController.swift */; };
 		72898A79257465B6000DCB25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A78257465B6000DCB25 /* SignUpViewController.swift */; };
@@ -55,6 +57,8 @@
 		4C2F55FF2572F91A005CE548 /* Night DriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Night DriveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2F56032572F91A005CE548 /* Night_DriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_DriveUITests.swift; sourceTree = "<group>"; };
 		4C2F56052572F91A005CE548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2F5690257C35EF005CE548 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../Downloads/GMapsDemo/GMapsDemo/Images.xcassets; sourceTree = "<group>"; };
+		4C2F5697257C3607005CE548 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../../Downloads/GMapsDemo/GMapsDemo/MapViewController.swift; sourceTree = "<group>"; };
 		5C49620A9BBC08A1E6E226D8 /* Pods-Night Drive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive.release.xcconfig"; path = "Target Support Files/Pods-Night Drive/Pods-Night Drive.release.xcconfig"; sourceTree = "<group>"; };
 		5EC25F4EF304065A13F1E13C /* Pods-Night Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive/Pods-Night Drive.debug.xcconfig"; sourceTree = "<group>"; };
 		7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_DriveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				4C2F55E12572F919005CE548 /* AppDelegate.swift */,
+				4C2F5697257C3607005CE548 /* MapViewController.swift */,
+				4C2F5690257C35EF005CE548 /* Images.xcassets */,
 				4C2F55E32572F919005CE548 /* SceneDelegate.swift */,
 				4C2F55E72572F919005CE548 /* Main.storyboard */,
 				4C2F55EA2572F91A005CE548 /* Assets.xcassets */,
@@ -186,6 +192,7 @@
 				4C2F55DB2572F919005CE548 /* Frameworks */,
 				4C2F55DC2572F919005CE548 /* Resources */,
 				0B09DF86D019A3D34F41FF99 /* [CP] Embed Pods Frameworks */,
+				2246237080FA05828FA8CF28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +231,7 @@
 				4C2F55FC2572F91A005CE548 /* Frameworks */,
 				4C2F55FD2572F91A005CE548 /* Resources */,
 				1B515FD1181911C0518814D4 /* [CP] Embed Pods Frameworks */,
+				0B7CA9E508F34EE7C844D091 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2F55EE2572F91A005CE548 /* LaunchScreen.storyboard in Resources */,
+				4C2F5691257C35EF005CE548 /* Images.xcassets in Resources */,
 				4C2F55EB2572F91A005CE548 /* Assets.xcassets in Resources */,
 				4C2F55E92572F919005CE548 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +331,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0B7CA9E508F34EE7C844D091 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1B515FD1181911C0518814D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +363,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2246237080FA05828FA8CF28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Night Drive/Pods-Night Drive-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		40881B701DE7109FD9D8BFC0 /* [CP] Check Pods Manifest.lock */ = {
@@ -412,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2F5698257C3607005CE548 /* MapViewController.swift in Sources */,
 				72898A6C25745CDF000DCB25 /* LoginViewController.swift in Sources */,
 				4C2F55E22572F919005CE548 /* AppDelegate.swift in Sources */,
 				4C2F55E42572F919005CE548 /* SceneDelegate.swift in Sources */,
