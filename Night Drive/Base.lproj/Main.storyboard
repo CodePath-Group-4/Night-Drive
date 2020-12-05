@@ -452,8 +452,8 @@
                                 <color key="textColor" red="0.2039215714" green="0.28627452250000002" blue="0.36862745879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V79-a9-Nxe">
-                                <rect key="frame" x="0.0" y="64" width="600" height="491"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V79-a9-Nxe" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="414" height="746"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DYj-zY-v2w">
@@ -510,7 +510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdC-Yg-ESd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="-591"/>
+            <point key="canvasLocation" x="1515.9420289855075" y="-591.29464285714278"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
