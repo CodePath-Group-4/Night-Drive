@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey("AIzaSyCMCsa0SiecS9gwKpDu8F1FejpjKdkkcz4")
         
+        UITabBar.appearance().barTintColor = .black
+        UITabBar.appearance().tintColor = .orange
+        
         // --- end copy
 
         

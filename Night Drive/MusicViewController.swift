@@ -1,25 +1,19 @@
 //
-//  MapsViewController.swift
+//  MusicViewController.swift
 //  Night Drive
 //
-//  Created by Rashon Poole on 12/5/20.
+//  Created by Rashon Poole on 12/6/20.
 //
 
 import UIKit
-import GoogleMaps
 
-class MapsViewController: UIViewController {
- 
-    @IBOutlet weak var viewMap: GMSMapView!
+class MusicViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
-        viewMap.camera = camera
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
