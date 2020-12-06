@@ -430,10 +430,10 @@
             </objects>
             <point key="canvasLocation" x="688" y="104"/>
         </scene>
-        <!--View Controller-->
+        <!--Maps View Controller-->
         <scene sceneID="aGs-NP-lMv">
             <objects>
-                <viewController id="x6B-cY-Fsl" customClass="ViewController" customModule="Night_Drive" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x6B-cY-Fsl" customClass="MapsViewController" customModule="Night_Drive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nxr-vU-EeO"/>
                         <viewControllerLayoutGuide type="bottom" id="cgq-eQ-ETX"/>
@@ -503,9 +503,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bbFindAddress" destination="6Ii-Ot-W6o" id="EnR-ld-RQF"/>
-                        <outlet property="lblInfo" destination="pBG-Eu-Pna" id="43o-N5-YVH"/>
-                        <outlet property="viewMap" destination="V79-a9-Nxe" id="epu-Hz-P3e"/>
+                        <outlet property="viewMap" destination="V79-a9-Nxe" id="i2c-25-1UO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdC-Yg-ESd" sceneMemberID="firstResponder"/>
