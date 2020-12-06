@@ -8,18 +8,38 @@
 import UIKit
 import GoogleMaps
 
-class MapsViewController: UIViewController {
+class MapsViewController: UIViewController, CLLocationManagerDelegate {
  
     @IBOutlet weak var viewMap: GMSMapView!
+    //Variables
+    var locationManager = CLLocationManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
-        viewMap.camera = camera
+        initializeTheLocationManager()
+        self.viewMap.isMyLocationEnabled = true
     }
-    
+
+    func initializeTheLocationManager() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        var location = locationManager.location?.coordinate
+
+        cameraMoveToLocation(toLocation: location)
+
+    }
+
+    func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
+        if toLocation != nil {
+            viewMap.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 15)
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -36,3 +56,4 @@ class MapsViewController: UIViewController {
     */
 
 }
+
