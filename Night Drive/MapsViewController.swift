@@ -9,7 +9,7 @@ import UIKit
 import GoogleMaps
 
 class MapsViewController: UIViewController {
-
+ 
     @IBOutlet weak var viewMap: GMSMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
