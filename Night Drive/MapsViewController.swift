@@ -8,11 +8,12 @@
 import UIKit
 import GoogleMaps
 
-class MapsViewController: UIViewController, CLLocationManagerDelegate {
+class MapsViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
  
     @IBOutlet weak var viewMap: GMSMapView!
     //Variables
     var locationManager = CLLocationManager()
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,7 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
 
         let coordinate = locationManager.location?.coordinate
         var location = locationManager.location?.coordinate
-
+        var myCoordinate = (locationManager.location?.coordinate)!
         cameraMoveToLocation(toLocation: location)
 
     }
@@ -44,49 +45,53 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    func createPin (coordinate: CLLocationCoordinate2D){
+    func createPin (coordinate: CLLocationCoordinate2D) -> CLLocationCoordinate2D{
         
         let pin = GMSMarker(position: coordinate)
         pin.icon = GMSMarker.markerImage(with: .orange)
         pin.appearAnimation = .pop
         pin.map = viewMap
         
+        return coordinate
  
-        drawlineTo(coordinates: coordinate)
+  //      drawlineTo(coordinates: coordinate)
     }
     
-    func drawlineTo(coordinates: CLLocationCoordinate2D){
-        
-        let myCoordinate = (locationManager.location?.coordinate)!
-        let path = GMSMutablePath()
-  //      path.add(myCoordinate)
-        path.add(coordinates)
-        let polyLine = GMSPolyline(path: path)
-        polyLine.map = viewMap
-        polyLine.strokeWidth = 3
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-extension MapsViewController: GMSMapViewDelegate {
+    var newCoord = CLLocationCoordinate2D()
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        createPin(coordinate: coordinate)
+        
+        if count == 0 {
+            var myCoordinate = (locationManager.location?.coordinate)!
+            newCoord = createPin(coordinate: coordinate)
+            let path = GMSMutablePath()
+            path.add(myCoordinate)
+            path.add(coordinate)
+            let polyLine = GMSPolyline(path: path)
+            polyLine.map = viewMap
+            polyLine.strokeWidth = 3
+        count += 1
+        }else{
+        
+            createPin(coordinate: coordinate)
+    //        var myCoordinate = coordinate
+            let path = GMSMutablePath()
+            path.add(newCoord)
+            path.add(coordinate)
+            let polyLine = GMSPolyline(path: path)
+            polyLine.map = viewMap
+            polyLine.strokeWidth = 3
+            newCoord = coordinate
+        }
+
+
     }
     
 }
