@@ -19,6 +19,8 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
 
         initializeTheLocationManager()
         self.viewMap.isMyLocationEnabled = true
+        
+        viewMap.delegate = self
     }
 
     func initializeTheLocationManager() {
@@ -29,6 +31,7 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
+        let coordinate = locationManager.location?.coordinate
         var location = locationManager.location?.coordinate
 
         cameraMoveToLocation(toLocation: location)
@@ -40,6 +43,29 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
             viewMap.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 15)
         }
     }
+    
+    func createPin (coordinate: CLLocationCoordinate2D){
+        
+        let pin = GMSMarker(position: coordinate)
+        pin.icon = GMSMarker.markerImage(with: .orange)
+        pin.appearAnimation = .pop
+        pin.map = viewMap
+        
+ 
+        drawlineTo(coordinates: coordinate)
+    }
+    
+    func drawlineTo(coordinates: CLLocationCoordinate2D){
+        
+        let myCoordinate = (locationManager.location?.coordinate)!
+        let path = GMSMutablePath()
+  //      path.add(myCoordinate)
+        path.add(coordinates)
+        let polyLine = GMSPolyline(path: path)
+        polyLine.map = viewMap
+        polyLine.strokeWidth = 3
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -57,3 +83,10 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate {
 
 }
 
+extension MapsViewController: GMSMapViewDelegate {
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        createPin(coordinate: coordinate)
+    }
+    
+}
