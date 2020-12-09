@@ -23,6 +23,28 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         
         viewMap.delegate = self
     }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//           return .lightContent
+//
+//       }
+//
+//       override func loadView() {
+//           let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 14.0)
+//           let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+//
+//           do {
+//               if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json"){
+//                   mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+//               } else {
+//                   NSLog("Unable to find style.json")
+//               }
+//           }catch {
+//               NSLog("One or more of the map styles failed to load. \(error)")
+//           }
+//
+//
+//
+//       }
 
     func initializeTheLocationManager() {
         locationManager.delegate = self
