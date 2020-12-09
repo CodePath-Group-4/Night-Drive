@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vg5-5L-8zg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -81,13 +81,13 @@
                     <connections>
                         <outlet property="passwordField" destination="KOH-JQ-n6A" id="xKr-tz-Iow"/>
                         <outlet property="usernameField" destination="KHf-OE-QxH" id="cL3-IN-ANi"/>
-                        <segue destination="FGU-Ic-Qyh" kind="presentation" identifier="loginSegue" id="1Yc-89-5iY"/>
                         <segue destination="Igh-aG-h01" kind="presentation" identifier="signUpSegue" id="6QZ-m1-VLP"/>
+                        <segue destination="vg5-5L-8zg" kind="presentation" identifier="loginSegue" id="PN8-uj-cUg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220" y="104"/>
+            <point key="canvasLocation" x="2596" y="-1390"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zjd-mh-WZS">
@@ -423,7 +423,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Zi7-tH-vkv">
             <objects>
-                <tabBarController id="vg5-5L-8zg" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="vg5-5L-8zg" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bhE-go-Cpq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -541,13 +541,13 @@
                         <outlet property="sPasswordField" destination="Cqu-ja-4NC" id="wL9-fT-5FZ"/>
                         <outlet property="sUsernameField" destination="cWh-JQ-UMT" id="Lal-11-pbC"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="signInCompleteSegue" id="9PD-bi-WgM"/>
-                        <segue destination="FGU-Ic-Qyh" kind="presentation" identifier="SignInToNavSegue" id="6qE-SU-fEi"/>
+                        <segue destination="vg5-5L-8zg" kind="presentation" identifier="SignInToNavSegue" id="Mkf-PO-yOw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLc-WG-pF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aJg-6z-CoD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-220" y="-674"/>
+            <point key="canvasLocation" x="687" y="-1390"/>
         </scene>
         <!--Home-->
         <scene sceneID="EGV-VP-Kri">
@@ -651,8 +651,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6QZ-m1-VLP"/>
-        <segue reference="1Yc-89-5iY"/>
+        <segue reference="Mkf-PO-yOw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Icon awesome-bars" width="32" height="28"/>
