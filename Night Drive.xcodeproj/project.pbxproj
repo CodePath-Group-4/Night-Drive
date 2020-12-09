@@ -23,6 +23,7 @@
 		93879B7374C4E29EF81DB3B2 /* Pods_Night_DriveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */; };
 		A2259EDB2447DC6DC6FBAB63 /* Pods_Night_Drive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */; };
 		A3C233BF80A75B0176A66305 /* Pods_Night_Drive_Night_DriveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */; };
+		F8AC11722580634200557301 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = F8AC11712580634200557301 /* style.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		8827B54887D234DC98952F43 /* Pods-Night Drive-Night DriveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		94164CC2317C9B3369BCBB3D /* Pods-Night Drive-Night DriveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.release.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Drive_Night_DriveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC11712580634200557301 /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				4C7562D4257C6303006A8186 /* MapsViewController.swift */,
 				4C2F55E32572F919005CE548 /* SceneDelegate.swift */,
 				4C2F55E72572F919005CE548 /* Main.storyboard */,
+				F8AC11712580634200557301 /* style.json */,
 				4C2F55EA2572F91A005CE548 /* Assets.xcassets */,
 				4C2F55EC2572F91A005CE548 /* LaunchScreen.storyboard */,
 				4C2F55EF2572F91A005CE548 /* Info.plist */,
@@ -296,6 +299,7 @@
 				4C2F55EE2572F91A005CE548 /* LaunchScreen.storyboard in Resources */,
 				4C2F5691257C35EF005CE548 /* Images.xcassets in Resources */,
 				4C2F55EB2572F91A005CE548 /* Assets.xcassets in Resources */,
+				F8AC11722580634200557301 /* style.json in Resources */,
 				4C2F55E92572F919005CE548 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
