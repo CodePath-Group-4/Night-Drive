@@ -14,6 +14,7 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     //Variables
     var locationManager = CLLocationManager()
     var count = 0
+    let MapStyle = "JSON_STYLE_GOES_HERE"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,29 +23,21 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         self.viewMap.isMyLocationEnabled = true
         
         viewMap.delegate = self
+        viewMap.mapType = .normal
+
+        do {
+            if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
+                viewMap.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+            } else {
+                NSLog("Unable to find style.json")
+            }
+        } catch {
+            NSLog("One or more of the map styles failed to load. \(error)")
+        }
+        
+        
     }
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//           return .lightContent
-//
-//       }
-//
-//       override func loadView() {
-//           let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 14.0)
-//           let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-//
-//           do {
-//               if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json"){
-//                   mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
-//               } else {
-//                   NSLog("Unable to find style.json")
-//               }
-//           }catch {
-//               NSLog("One or more of the map styles failed to load. \(error)")
-//           }
-//
-//
-//
-//       }
+
 
     func initializeTheLocationManager() {
         locationManager.delegate = self
@@ -115,5 +108,8 @@ class MapsViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
 
 
     }
+    
+    
+    
     
 }
