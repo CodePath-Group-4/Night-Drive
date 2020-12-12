@@ -20,6 +20,7 @@
 		72898A6C25745CDF000DCB25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A6B25745CDF000DCB25 /* LoginViewController.swift */; };
 		72898A7425745D0C000DCB25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A7325745D0C000DCB25 /* HomeViewController.swift */; };
 		72898A79257465B6000DCB25 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72898A78257465B6000DCB25 /* SignUpViewController.swift */; };
+		7289EAFA2585295500FCA15A /* Childish Gambino - Sober.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7289EAF92585295500FCA15A /* Childish Gambino - Sober.mp3 */; };
 		93879B7374C4E29EF81DB3B2 /* Pods_Night_DriveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7143D0A19015E90413EE199F /* Pods_Night_DriveTests.framework */; };
 		A2259EDB2447DC6DC6FBAB63 /* Pods_Night_Drive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */; };
 		A3C233BF80A75B0176A66305 /* Pods_Night_Drive_Night_DriveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B4506F2512B263CE68D620 /* Pods_Night_Drive_Night_DriveUITests.framework */; };
@@ -68,6 +69,7 @@
 		72898A6B25745CDF000DCB25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		72898A7325745D0C000DCB25 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		72898A78257465B6000DCB25 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7289EAF92585295500FCA15A /* Childish Gambino - Sober.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Childish Gambino - Sober.mp3"; sourceTree = "<group>"; };
 		7E7241A9EE3EBFC78AC3348C /* Pods_Night_Drive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Night_Drive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8827B54887D234DC98952F43 /* Pods-Night Drive-Night DriveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.debug.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		94164CC2317C9B3369BCBB3D /* Pods-Night Drive-Night DriveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Night Drive-Night DriveUITests.release.xcconfig"; path = "Target Support Files/Pods-Night Drive-Night DriveUITests/Pods-Night Drive-Night DriveUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				4C2F55E12572F919005CE548 /* AppDelegate.swift */,
 				4C7562E4257D6E9A006A8186 /* MusicViewController.swift */,
 				4C2F5690257C35EF005CE548 /* Images.xcassets */,
+				7289EAF92585295500FCA15A /* Childish Gambino - Sober.mp3 */,
 				4C7562D4257C6303006A8186 /* MapsViewController.swift */,
 				4C2F55E32572F919005CE548 /* SceneDelegate.swift */,
 				4C2F55E72572F919005CE548 /* Main.storyboard */,
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2F55EE2572F91A005CE548 /* LaunchScreen.storyboard in Resources */,
+				7289EAFA2585295500FCA15A /* Childish Gambino - Sober.mp3 in Resources */,
 				4C2F5691257C35EF005CE548 /* Images.xcassets in Resources */,
 				4C2F55EB2572F91A005CE548 /* Assets.xcassets in Resources */,
 				F8AC11722580634200557301 /* style.json in Resources */,

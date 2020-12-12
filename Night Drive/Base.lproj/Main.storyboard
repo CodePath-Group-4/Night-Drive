@@ -199,6 +199,9 @@
                                 <rect key="frame" x="186" y="291" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Icon material-pause"/>
+                                <connections>
+                                    <action selector="playButton:" destination="DB4-Rr-Eps" eventType="touchUpInside" id="DLg-Wy-Z1J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4L-kP-NmQ">
                                 <rect key="frame" x="122" y="292" width="36" height="36"/>
@@ -301,6 +304,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="j5N-lg-X98"/>
+                    <connections>
+                        <outlet property="albumCoverImageView" destination="YCD-5G-TcR" id="2y5-Ri-f2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daw-ZD-aot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
