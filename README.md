@@ -30,6 +30,7 @@ Allows users to create their own night driving route with music of their choice.
 - [x] User can log in
 - [x] User logs in to access their location and preference settings
 - [ ] User picks what their favorite artist/genre/etc. (Think Spotify interface)
+- [x] User can play downloaded music
 - [x] User picks their route and amount of time.
 - [ ] Settings (Accesibility, Notification, General, etc.)
 
