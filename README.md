@@ -45,6 +45,7 @@ Allows users to create their own night driving route with music of their choice.
 <p float="left"> 
 <img src= 'http://g.recordit.co/DN3Rz2OnKG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src= 'http://g.recordit.co/1O5OmCyHVU.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= 'http://g.recordit.co/7MQgPGjLOj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 </p>
 
 
